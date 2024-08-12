@@ -5,8 +5,8 @@ import scipy.io
 
 import time
 
-from layer.layer1 import FullyConnectedLayer,SoftmaxLossLayer,ReLULayer
-from layer. layer2 import ConvolutionalLayer,MaxPoolingLayer,FlattenLayer
+from lab3.layer.layer1 import FullyConnectedLayer,SoftmaxLossLayer,ReLULayer
+from lab3.layer.layer2 import ConvolutionalLayer,MaxPoolingLayer,FlattenLayer
 
 
 class VGG19(object):

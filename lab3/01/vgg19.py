@@ -176,6 +176,6 @@ if __name__ == "__main__":
     vgg19.build_model()
     vgg19.init_model()
     vgg19.load_model()
-    vgg19.load_image('./image/cat3.jpg')
+    vgg19.load_image('./image/strawberries.jpg')
 
     prob = vgg19.evaluate()

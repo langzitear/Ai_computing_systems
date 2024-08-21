@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-from layer.layer1 import FullyConnectedLayer , ReLULayer ,SoftmaxLossLayer
+from lab3.layer.layer1 import FullyConnectedLayer , ReLULayer ,SoftmaxLossLayer
 import struct
 
 MNIST_DIR = "./mnist_data/"

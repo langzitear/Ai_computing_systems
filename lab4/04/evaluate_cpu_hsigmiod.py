@@ -90,13 +90,13 @@ class TransNet(nn.Module):
 
 
     def forward(self,x):
-        x = self.layer(x)
-        x_shape = x.shape
-        x_flat = x.flatten(1)
-        out_flat = hsigmoid_extension.hsigmoid_cpu(x_flat)
-        out = out_flat.view(x_shape)
-        return out
-        # return torch.nn.functional.relu(self.layer(x))
+        # x = self.layer(x)
+        # x_shape = x.shape
+        # x_flat = x.flatten(1)
+        # out_flat = hsigmoid_extension.hsigmoid_cpu(x_flat)
+        # out = out_flat.view(x_shape)
+        # return out
+        return torch.nn.functional.relu(self.layer(x))
 
 
 if __name__ == '__main__':
@@ -120,7 +120,6 @@ if __name__ == '__main__':
         print("The infer time is %s" % delta_time)
         save_image(torch.cat((image_c, image_g), -1), f'./image/cpu/result_{i}.jpg')
     print("TEST RESULT PASS!\n")
-
 
 
 
